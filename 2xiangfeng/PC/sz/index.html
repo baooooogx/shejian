@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>舌尖2·相逢（深圳美食）</title>
+	<link href="css/style.css" rel="stylesheet" />
+	<script>
+	(function(){var ga = document.createElement('script');ga.type='text/javascript';ga.async=!0;ga.src='http://t2.dpfile.com/t/res/ga2.min.js';var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+	</script>
+    <script src="http://i2.dpfile.com/hls/hippo2.min.v11.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/taste.js"></script>
+</head>
+<body>
+	<div class="whole" id="top">
+		<div class="head"></div>
+		<div class="daily-life">
+			<ul>
+				<li class="announce1">
+				    <a href="http://t.dianping.com/events/shejian-jc/pc/bj" target="_blank">
+						<div class="intro-img announce-pointer">
+							<div class="announce-title">家常</div>
+							<div class="announce-date">
+								<p class="announce-date-background spacing-style">往期</p>
+								<p class="announce-date-time">5月9日</p>
+							</div>
+						</div>
+					</a>
+					<img class="announce-img" src="images/little.png" alt="">
+				</li>
+				<li class="current-li announce2">
+					<div class="intro-img announce-pointer">
+						<div class="announce-title">相逢</div>
+						<div class="announce-date">
+							<p class="announce-date-background spacing-style">本期</p>
+							<p class="announce-date-time">5月16日</p>
+						</div>
+					</div>
+					<img class="announce-img" src="images/little.png" alt="">
+				</li>
+				<li class="announce3">
+					<div class="intro-img">
+						<div class="announce-title">秘境</div>
+						<div class="announce-date">
+							<p class="announce-date-background">敬请期待</p>
+							<p class="announce-date-time">5月23日</p>
+						</div>
+					</div>
+					<img class="announce-img" src="images/little.png" alt="">
+				</li>
+				<li class="announce4">
+					<div class="intro-img">
+						<div class="announce-title">三餐</div>
+						<div class="announce-date">
+							<p class="announce-date-background">敬请期待</p>
+							<p class="announce-date-time">5月30日</p>
+						</div>
+					</div>
+					<img class="announce-img" src="images/little.png" alt="">
+				</li>
+				<li class="announce5">
+					<div class="intro-img">
+						<div class="announce-title">回味</div>
+						<div class="announce-date">
+							<p class="announce-date-background">敬请期待</p>
+							<p class="announce-date-time">6月6日</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="online-food" id="today-food"></div>
+		<div class="paper-background">
+			<ul>
+				<li class="chicken1">
+					<img src="images/big1.png" alt="" border="0" usemap="#Map201" class="chicken1-none">
+                    <map name="Map201">
+                      <area shape="rect" coords="74,295,154,322" href="#" target="_blank" alt="毛家饭店">
+                      <area shape="rect" coords="165,293,242,322" href="#" target="_blank" alt="外婆食代">
+                      <area shape="rect" coords="253,295,333,322" href="#" target="_blank" alt="三湘人家">
+                      <area shape="circle" coords="165,149,136" href="#" target="_blank" alt="红烧肉">
+                    </map>
+				</li>
+				<li class="chicken2">
+					<img src="images/big2.png" alt="" border="0" usemap="#Map202" class="chicken1-none">
+                    <map name="Map202">
+                      <area shape="rect" coords="73,293,147,322" href="#" target="_blank" alt="春满园">
+                      <area shape="rect" coords="153,294,238,322" href="#" target="_blank" alt="大唐靓汤">
+                      <area shape="rect" coords="245,295,371,323" href="#" target="_blank" alt="粤菜王府">
+                      <area shape="circle" coords="165,149,136" href="#" target="_blank" alt="老火靓汤">
+                    </map>
+				</li>
+				<li class="chicken3">
+					<img src="images/big3.png" alt="" border="0" usemap="#Map203" class="chicken1-none">
+                    <map name="Map203">
+                      <area shape="rect" coords="78,294,145,321" href="#" target="_blank" alt="许留山">
+                      <area shape="rect" coords="159,295,229,324" href="#" target="_blank" alt="五代同糖">
+                      <area shape="rect" coords="245,295,339,324" href="#" target="_blank" alt="顺品甜品屋">
+                      <area shape="circle" coords="165,149,136" href="#" target="_blank" alt="糖水">
+                    </map>
+				</li>
+				<li class="chicken4">
+					<img src="images/big4.png" alt="" border="0" usemap="#Map204" class="chicken1-none">
+                    <map name="Map204">
+                      <area shape="rect" coords="69,295,143,320" href="#" target="_blank" alt="蜀明香">
+                      <area shape="rect" coords="152,295,222,324" href="#" target="_blank" alt="巴蜀风">
+                      <area shape="rect" coords="232,296,310,323" href="#" target="_blank" alt="缪氏川菜">
+                      <area shape="circle" coords="165,149,136" href="#" target="_blank" alt="泡椒凤爪">
+                    </map>
+				</li>
+			</ul>
+	  </div>
+		<div class="home-food"></div>
+		<div class="home-food-list">
+			<div class="recommend1" id="classics">
+				<div class="intro"><span>川湘经典菜肴</span></div>
+				<div class="link">
+					<a href="http://t.dianping.com/home/c/10s1004" target="_blank" class="span1" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-chuangcai',action:'click'}])">更多川菜 >></a>
+					<a href="http://t.dianping.com/home/c/10s1007" target="_blank" class="span2" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-xiangcai',action:'click'}])">湘菜 >></a>
+				</div>
+				<div class="food-pic">
+					<ul>
+						<li class="pic1">
+							<a target='_blank' href="http://t.dianping.com/deal/5002554" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-1',action:'click'}])">
+								<img src="http://i1.s1.dpfile.com/tuan/20130828/337903_130221718650000000.jpg" alt="[2店通用]红砖房乡村餐厅">
+							</a>
+							<div class="text-decri">[2店通用]红砖房乡村餐厅</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">88</span>
+					
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/5002554" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-1',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic2">
+							<a target='_blank' href="http://t.dianping.com/deal/198824" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-2',action:'click'}])">
+								<img src="http://i2.s1.dpfile.com/tuan/20130606/236945_130149857950000000.jpg" alt="[2店通用]毛家饭店">
+							</a>
+							<div class="text-decri">[2店通用]毛家饭店</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">68</span>
+										
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/198824" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-2',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic3">
+							<a target='_blank' href="http://t.dianping.com/deal/5108851" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-3',action:'click'}])"><img src="http://i2.s2.dpfile.com/pc/mc/7198b6c63d5d28edc4224f54ff48c92f(450x280)/aD0yODAmaz0vcGMvbWMvNzE5OGI2YzYzZDVkMjhlZGM0MjI0ZjU0ZmY0OGM5MmYmbG9nbz0wJm09eCZ3PTQ1MA.2f166f720438f12536eee66fe831d6c2/thumb.jpg" alt="[市中心区] 一品川菜"></a>
+							<div class="text-decri">[市中心区] 一品川菜</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">59</span>
+										
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/5108851" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-3',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="recommend2" id="delicious">
+				<div class="intro"><span>江浙可口美食</span></div>
+				<div class="link">
+					<a href="http://t.dianping.com/home/c/10s1012" target="_blank" class="span2" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-jiangzhe',action:'click'}])">更多江浙菜 >></a>
+				</div>
+				<div class="food-pic">
+					<ul>
+						<li class="pic1">
+							<a target='_blank' href="http://t.dianping.com/deal/5290046" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-4',action:'click'}])"><img src="http://i3.s1.dpfile.com/pc/mc/11adb3ddff6e4a430f7abcd75b0d21b5(450x280)/aD0yODAmaz0vcGMvbWMvMTFhZGIzZGRmZjZlNGE0MzBmN2FiY2Q3NWIwZDIxYjUmbG9nbz0wJm09eCZ3PTQ1MA.d76eca040ace1396526426911edabfa4/thumb.jpg" alt="[15店通用] 拾味馆"></a>
+							<div class="text-decri">[15店通用] 拾味馆</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">39</span>
+										
+									</p>
+									<p>原价￥50</p>
+								</div>
+								<a href="http://t.dianping.com/deal/5290046" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-4',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic2">
+							<a target='_blank' href="http://t.dianping.com/deal/2114068" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-5',action:'click'}])"><img src="http://i3.s1.dpfile.com/pc/mc/c0640ffa02bd3572fb7e9feedc59bc68(450x280)/aD0yODAmaz0vcGMvbWMvYzA2NDBmZmEwMmJkMzU3MmZiN2U5ZmVlZGM1OWJjNjgmbG9nbz0wJm09eCZ3PTQ1MA.95cee9f250970cb38b8ed853e4243332/thumb.jpg" alt="[市中心区] 钱塘潮"></a>
+							<div class="text-decri">[市中心区]钱塘潮</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">80</span>
+										
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/2114068" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-5',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic3">
+							<a target='_blank' href="http://t.dianping.com/deal/5172838" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-6',action:'click'}])"><img src="http://i1.s1.dpfile.com/pc/mc/ddd99f0b3255d408319a7ab24044bbba(450x280)/aD0yODAmaz0vcGMvbWMvZGRkOTlmMGIzMjU1ZDQwODMxOWE3YWIyNDA0NGJiYmEmbG9nbz0wJm09eCZ3PTQ1MA.1a5ece8c05e6a40e0766d54d938febe3/thumb.jpg" alt="[多商区] 深圳西湖春天餐饮"></a>
+							<div class="text-decri">[多商区]深圳西湖春天餐饮</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">85</span>
+										
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/5172838" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-6',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="recommend3" id="northeast">
+				<div class="intro"><span>东北美食</span></div>
+				<div class="link">
+					<a href="http://t.dianping.com/home/c/10s1010" target="_blank" class="span1" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-dongbei',action:'click'}])">更多东北菜 >></a>
+				</div>
+				<div class="food-pic">
+					<ul>
+						<li class="pic1">
+							<a target='_blank' href="http://t.dianping.com/deal/2092782" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-7',action:'click'}])"><img src="http://i3.s1.dpfile.com/pc/mc/b41c164c16033170f524c3253dc2d59f(450x280)/aD0yODAmaz0vcGMvbWMvYjQxYzE2NGMxNjAzMzE3MGY1MjRjMzI1M2RjMmQ1OWYmbG9nbz0wJm09eCZ3PTQ1MA.990a9e7d04d56d55753dac4ffeca9920/thumb.jpg" alt="[宝安南路沿线] 老北方饺子王"></a>
+							<div class="text-decri">[宝安南路沿线]老北方饺子王</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">75</span>
+										
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/2092782" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-7',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic2">
+							<a target='_blank' href="http://t.dianping.com/deal/5027848" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-8',action:'click'}])"><img src="http://i2.s2.dpfile.com/pc/mc/40e9c338aaa1c947deefc7e8302ec03c(450x280)/aD0yODAmaz0vcGMvbWMvNDBlOWMzMzhhYWExYzk0N2RlZWZjN2U4MzAyZWMwM2MmbG9nbz0wJm09eCZ3PTQ1MA.018b8a614f651b5b0f03af9c632ab2c4/thumb.jpg" alt="[西乡] 老刘野生大鱼坊"></a>
+							<div class="text-decri">[西乡]老刘野生大鱼坊</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">218</span>
+										
+									</p>
+									<p>原价￥510</p>
+								</div>
+								<a href="http://t.dianping.com/deal/5027848" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-8',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic3">
+							<a target='_blank' href="http://t.dianping.com/deal/2246789" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-9',action:'click'}])"><img src="http://i1.s2.dpfile.com/pc/mc/28ddb822f08ea631cf84514619ecd10b(450x280)/aD0yODAmaz0vcGMvbWMvMjhkZGI4MjJmMDhlYTYzMWNmODQ1MTQ2MTllY2QxMGImbG9nbz0wJm09eCZ3PTQ1MA.b5f1403b7aea513748e228c5e1c746f3/thumb.jpg" alt="[华侨城] 李连贵熏肉大饼店"></a>
+							<div class="text-decri">[华侨城]李连贵熏肉大饼店</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">65</span>
+										
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/2246789" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-9',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="recommend4" id="local-taste">
+				<div class="intro"><span>粤闽风味</span></div>
+				<div class="link">
+					<a href="http://t.dianping.com/home/c/10s1005" target="_blank" class="span1" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-yuecai',action:'click'}])">更多粤菜 >></a>
+				</div>
+				<div class="food-pic">
+					<ul>
+						<li class="pic1">
+							<a target='_blank' href="http://t.dianping.com/deal/165735" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-10',action:'click'}])"><img src="http://i3.s1.dpfile.com/tuan/20130427/203660_130115335110000000.jpg" alt="[南油] 海诚大酒楼"></a>
+							<div class="text-decri">[南油]海诚大酒楼</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">65</span>
+										
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/165735" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-10',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic2">
+							<a target='_blank' href="http://t.dianping.com/deal/2037766" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-11',action:'click'}])"><img src="http://i3.s2.dpfile.com/pc/mc/1fc0192f6ea8cf2d07f5ab519ddd39f1(450x280)/aD0yODAmaz0vcGMvbWMvMWZjMDE5MmY2ZWE4Y2YyZDA3ZjVhYjUxOWRkZDM5ZjEmbG9nbz0wJm09eCZ3PTQ1MA.e0137b6d082110400fb0dfb468d3df48/thumb.jpg" alt="[市中心区] 利宝阁"></a>
+							<div class="text-decri">[市中心区]利宝阁</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">68</span>
+										
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/2037766" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-11',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic3">
+							<a target='_blank' href="http://t.dianping.com/deal/2038227" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-12',action:'click'}])"><img src="http://i3.s2.dpfile.com/pc/mc/d8fb33d510f27c725f2c19d8862a06bf(450x280)/aD0yODAmaz0vcGMvbWMvZDhmYjMzZDUxMGYyN2M3MjVmMmMxOWQ4ODYyYTA2YmYmbG9nbz0wJm09eCZ3PTQ1MA.5f4987b2d30302fbb4e4468dbb49cbf8/thumb.jpg" alt="[西乡] 凤凰楼(宝安汇一城店)"></a>
+							<div class="text-decri">[西乡] 凤凰楼(宝安汇一城店)</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">76</span>
+										
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/2038227" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-12',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="recommend5" id="northwest">
+				<div class="intro"><span>西北口味</span></div>
+				<div class="link">
+					<a href="http://t.dianping.com/home/c/10s1032" target="_blank" class="span1" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-xibei',action:'click'}])">更多西北菜 >></a>
+				</div>
+				<div class="food-pic">
+					<ul>
+						<li class="pic1">
+							<a target='_blank' href="http://t.dianping.com/deal/5096005" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-13',action:'click'}])"><img src="http://i2.s1.dpfile.com/pc/mc/e94606b9ffd338a4c8e4142095c0f909(450x280)/aD0yODAmaz0vcGMvbWMvZTk0NjA2YjlmZmQzMzhhNGM4ZTQxNDIwOTVjMGY5MDkmbG9nbz0wJm09eCZ3PTQ1MA.46fb0fb69af68e6717234e7bfa5eb7da/thumb.jpg" alt="[4店通用] 西安老王家"></a>
+							<div class="text-decri">[4店通用]西安老王家</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">35</span>
+										
+									</p>
+									<p>原价￥50</p>
+								</div>
+								<a href="http://t.dianping.com/deal/5096005" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-13',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic2">
+							<a target='_blank' href="http://t.dianping.com/deal/5098745" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-14',action:'click'}])"><img src="http://i2.s1.dpfile.com/pc/mc/499da14e6eeffe0eced380407d445725(450x280)/aD0yODAmaz0vcGMvbWMvNDk5ZGExNGU2ZWVmZmUwZWNlZDM4MDQwN2Q0NDU3MjUmbG9nbz0wJm09eCZ3PTQ1MA.b36317d8b47d4d9725d628307eed93d4/thumb.jpg" alt="[9店通用] 老西安"></a>
+							<div class="text-decri">[9店通用]老西安</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">49</span>
+									
+									</p>
+									<p>原价￥69</p>
+								</div>
+								<a href="http://t.dianping.com/deal/5098745" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-14',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic3">
+							<a target='_blank' href="http://t.dianping.com/deal/215976" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-15',action:'click'}])"><img src="http://i3.s1.dpfile.com/pc/mc/3fe04da3047fcdbe9970f8ce8dfa6c8b(450x280)/aD0yODAmaz0vcGMvbWMvM2ZlMDRkYTMwNDdmY2RiZTk5NzBmOGNlOGRmYTZjOGImbG9nbz0wJm09eCZ3PTQ1MA.1a9d9139b32c609c52839e8ffb69c680/thumb.jpg" alt="[宝安南路沿线] 西贝莜面村"></a>
+							<div class="text-decri">[宝安南路沿线]西贝莜面村</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">82</span>
+										
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/215976" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-15',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="recommend6" id="central-china">
+				<div class="intro"><span>华中美食</span></div>
+				<div class="link">
+					<a href="http://t.dianping.com/home/c/10s1022" target="_blank" class="span1" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-hubei',action:'click'}])">更多湖北菜 >></a>
+					<a href="http://t.dianping.com/home/c/10s1030" target="_blank" class="span2" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-jiangxi',action:'click'}])">江西菜 >></a>
+				</div>
+				<div class="food-pic">
+					<ul>
+						<li class="pic1">
+							<a target='_blank' href="http://t.dianping.com/deal/2229072" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-16',action:'click'}])"><img src="http://i1.s1.dpfile.com/pc/mc/6ea53ec9e2583a2cb1bab7366b24f03b(450x280)/aD0yODAmaz0vcGMvbWMvNmVhNTNlYzllMjU4M2EyY2IxYmFiNzM2NmIyNGYwM2ImbG9nbz0wJm09eCZ3PTQ1MA.41fdec09b3db46c8b9edd35b7862d4ea/thumb.jpg" alt="[景田] 荆楚大地"></a>
+							<div class="text-decri">[景田]荆楚大地</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">70</span>
+										
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/2229072" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-16',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic2">
+							<a target='_blank' href="http://t.dianping.com/deal/2182004" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-17',action:'click'}])"><img src="http://i3.s1.dpfile.com/pc/mc/d5ae5a079cdb727e3a3b6ca1dd9a923b(450x280)/aD0yODAmaz0vcGMvbWMvZDVhZTVhMDc5Y2RiNzI3ZTNhM2I2Y2ExZGQ5YTkyM2ImbG9nbz0wJm09eCZ3PTQ1MA.bf5310e9cb53086b15730123c8672f07/thumb.jpg" alt="[2店通用] 红砖房乡村餐厅"></a>
+							<div class="text-decri">[2店通用]红砖房乡村餐厅</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">69</span>
+									
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/2182004" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-17',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic3">
+							<a target='_blank' href="http://t.dianping.com/deal/2096712" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-18',action:'click'}])"><img src="http://t2.s2.dpfile.com/pc/mc/789a9f9d3d00e6e61dfa8a8213d5d5d0(450x1024)/thumb.jpg" alt="[华侨城] 青朴落乡村酒馆"></a>
+							<div class="text-decri">[华侨城]青朴落乡村酒馆</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">88</span>
+										
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/2096712" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-18',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="recommend7" id="western">
+				<div class="intro"><span>西域风情</span></div>
+				<div class="link">
+					<a href="http://t.dianping.com/home/c/10s1011" target="_blank" class="span1" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-xinjiang',action:'click'}])">更多新疆菜 >></a>
+				</div>
+				<div class="food-pic">
+					<ul>
+						<li class="pic1">
+							<a target='_blank' href="http://t.dianping.com/deal/2195729" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-19',action:'click'}])"><img src="http://i1.s1.dpfile.com/pc/mc/486e0c904ce2ae30933d0a6b990a606a(450x280)/aD0yODAmaz0vcGMvbWMvNDg2ZTBjOTA0Y2UyYWUzMDkzM2QwYTZiOTkwYTYwNmEmbG9nbz0wJm09eCZ3PTQ1MA.3e26744141b6d244c41c51bf6219cca8/thumb.jpg" alt="[香蜜湖] 伊地古德"></a>
+							<div class="text-decri">[香蜜湖]伊地古德</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">80</span>
+										
+									</p>
+									<p>原价￥100</p>
+								</div>
+								<a href="http://t.dianping.com/deal/2195729" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-19',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic2">
+							<a target='_blank' href="http://t.dianping.com/deal/84817" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-20',action:'click'}])"><img src="http://i3.s1.dpfile.com/tuan/20121114/112796_129973855190000000.jpg" alt="[香蜜湖] 金疆西域食府"></a>
+							<div class="text-decri">[香蜜湖]金疆西域食府</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">168</span>
+									
+									</p>
+									<p>原价￥334</p>
+								</div>
+								<a href="http://t.dianping.com/deal/84817" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-20',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+						<li class="pic3">
+							<a target='_blank' href="http://t.dianping.com/deal/5056116" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-21',action:'click'}])"><img src="http://i3.s1.dpfile.com/pc/mc/b205006bae45556de7c40f8e56a8009b(450x280)/aD0yODAmaz0vcGMvbWMvYjIwNTAwNmJhZTQ1NTU2ZGU3YzQwZjhlNTZhODAwOWImbG9nbz0wJm09eCZ3PTQ1MA.dc058ef3201bd549bd6349144d7c9dab/thumb.jpg" alt="[宝安中心区] 老蒙碳烤羊腿"></a>
+							<div class="text-decri">[宝安中心区]老蒙碳烤羊腿</div>
+							<div class="description">
+								<div class="price">
+									<p>
+										<span class="price-style1">￥</span>
+										<span class="price-style2">98</span>
+
+									</p>
+									<p>原价￥195</p>
+								</div>
+								<a href="http://t.dianping.com/deal/5056116" target="_blank" class="buy-now" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-21',action:'click'}])">立即购买</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<a class="footer" href="http://t.dianping.com/home/c/10" target="_blank" onClick="_hip.push(['mv',{module:'shejian5-pc-sz-meishi',action:'click'}])"></a>
+	</div>
+	<img src="images/float.png" alt="" border="0" usemap="#Map3" class="float">
+    <map name="Map3">
+      <area shape="rect" coords="2,50,106,103" href="#classics">
+      <area shape="rect" coords="1,103,107,152" href="#delicious">
+      <area shape="rect" coords="1,153,110,200" href="#northeast">
+      <area shape="rect" coords="2,199,106,252" href="#local-taste">
+      <area shape="rect" coords="2,252,109,302" href="#northwest">
+      <area shape="rect" coords="1,302,109,353" href="#central-china">
+      <area shape="rect" coords="2,353,105,399" href="#western">
+      <area shape="rect" coords="4,402,101,475" href="#top">
+      <area shape="rect" coords="3,4,106,51" href="#today-food">
+    </map>
+</body>
+</html>
